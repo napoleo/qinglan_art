@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>青蓝-教师列表</title>
-	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./privatecss/global.css">
 
 	<script src="./bootstrap-3.3.7-dist/js/jquery-2.0.3.js"></script>
@@ -11,7 +11,6 @@
 	<script src="./category.js"></script>
 </head>
 <body>
-	<div class="container">
 		<!--导航部分-->
 		<nav class="nav navbar-default" role="navigation">
 			<div class="navbar-header">
@@ -32,7 +31,7 @@
 					<div class="form-group">
 						<input class="form-control" type="text" placeholder="想学什么">
 					</div>
-					<button class="btn btn-default" type="submit">搜索</button>
+					<button class="btn btn-info" type="submit">搜索</button>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">注册</a></li>
@@ -44,6 +43,7 @@
 		</nav>
 		<!--导航部分-->
 
+	<div class="container">
 		<!--面包屑导航-->
 		<ol class="breadcrumb">
 			<li><a href="#">首页</a></li>
@@ -53,42 +53,43 @@
 		<!--面包屑导航-->
 
 		<!--课程分类-->
-		<div class="category">
+		<div class="main-category">
 			<ul class="nav nav-pills">
-				<li><a data-toggle="collapse" data-target="#instrument" href="#" onclick="toActive(this)">器乐</a></li>
-				<li><a data-toggle="collapse" data-target="#vocal" href="#" onclick="toActive(this)">声乐</a></li>
-				<li><a data-toggle="collapse" data-target="#drawing" href="#" onclick="toActive(this)">绘画</a></li>
-				<li><a data-toggle="collapse" data-target="#calligraphy" href="#" onclick="toActive(this)">书法</a></li>
-				<li><a data-toggle="collapse" data-target="#chess" href="#" onclick="toActive(this)">棋牌</a></li>
+				<li><a data-toggle="collapse" data-target="#instrument" href="#">器乐</a></li>
+				<li><a data-toggle="collapse" data-target="#vocal" href="#">声乐</a></li>
+				<li><a data-toggle="collapse" data-target="#drawing" href="#">绘画</a></li>
+				<li><a data-toggle="collapse" data-target="#calligraphy" href="#">书法</a></li>
+				<li><a data-toggle="collapse" data-target="#chess" href="#">棋牌</a></li>
+				<li><a href="#" onclick="closeAll()">全部收起</a></li>
 			</ul>
-			<ul class="collapse" id="instrument">
+			<ul class="collapse nav nav-pills sub-category" id="instrument">
 				<li><a href="#">吉他</a></li>
 				<li><a href="#">电钢</a></li>
 				<li><a href="#">古筝</a></li>
 				<li><a href="#">小提琴</a></li>
 				<li><a href="#">竖笛</a></li>
 			</ul>
-			<ul class="collapse" id="vocal">
+			<ul class="collapse nav nav-pills sub-category" id="vocal">
 				<li><a href="#">流行</a></li>
 				<li><a href="#">卡拉OK</a></li>
 				<li><a href="#">原生态</a></li>
 				<li><a href="#">民族</a></li>
 				<li><a href="#">美声</a></li>
 			</ul>
-			<ul class="collapse" id="drawing">
+			<ul class="collapse nav nav-pills sub-category" id="drawing">
 				<li><a href="#">中国画</a></li>
 				<li><a href="#">油画</a></li>
 				<li><a href="#">素描</a></li>
 				<li><a href="#">水粉画</a></li>
 				<li><a href="#">速写</a></li>
 			</ul>
-			<ul class="collapse" id="calligraphy">
+			<ul class="collapse nav nav-pills sub-category" id="calligraphy">
 				<li><a href="#">硬笔书法</a></li>
 				<li><a href="#">软笔书法</a></li>
 				<li><a href="#">中文书法</a></li>
 				<li><a href="#">英文书法</a></li>
 			</ul>
-			<ul class="collapse" id="chess">
+			<ul class="collapse nav nav-pills sub-category" id="chess">
 				<li><a href="#">国际象棋</a></li>
 				<li><a href="#">中国象棋</a></li>
 				<li><a href="#">围棋</a></li>
@@ -109,11 +110,12 @@
 		</ul>
 		<div class="search-item">
 			<div class="teacher-avatar">
-				<img class="img-circle" src="img/coffeetv.gif" width="80px" alt="Avatar">
+				<a href="#"><img class="img-circle" src="img/coffeetv.gif" width="80px" alt="Avatar"></a>
 			</div>
 			<div class="teacher-name">
-				<h3>John Smith</h3>
+				<h3><a href="#">John Smith</a></h3>
 			</div>
+			&nbsp;
 			<div class="teacher-rank label label-success">
 				实名认证
 			</div>
@@ -133,35 +135,10 @@
 			<a href="#" class="teacher-comment">查看评价</a>
 
 		</div>
-		<div class="search-item">
-			<div class="teacher-avatar">
-				<img class="img-circle" src="img/coffeetv.gif" width="80px" alt="Avatar">
-			</div>
-			<div class="teacher-name">
-				<h3>John Smith</h3>
-			</div>
-			<div class="teacher-rank label label-success">
-				实名认证
-			</div>
-			<div class="teacher-location">
-				<span class="glyphicon glyphicon-map-marker"></span>
-				天津市北辰区
-			</div>
-			<div class="teacher-course-description">
-				国际象棋开局陷阱
-			</div>
-			<div class="teacher-course-type">
-				<span class="label label-info">1对1</span>
-			</div>
-			<div class="teacher-course-price">
-				￥50/课时
-			</div>
-			<a href="#" class="teacher-comment">查看评价</a>
 
-		</div>
 		<nav>
 			<ul class="pagination">
-				<li class="disabled"><a href="#">上一页</a></li>
+				<li class="disabled"><a>上一页</a></li>
 
 				<li class="active"><a href="#">1</a></li>
 				<li><a href="#">2</a></li>

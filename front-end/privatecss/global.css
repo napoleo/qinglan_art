@@ -2,18 +2,32 @@
 	color:#45bee2 !important;
 }
 .breadcrumb {
+	position:relative;
+	left:-4px;
 	background-color: transparent;
 	margin-bottom: 0px;
+	margin-top:10px;
+}
+.main-category li a,
+.sub-category li a {
+	padding:2px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	margin-right:10px;
 }
 .item-navi {
 	margin-top:20px;
 }
-
 .search-item {
 	margin-top:20px;
 	margin-bottom:10px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #eaeaea;
+}
+.teacher-name a:hover {
+	text-decoration: none;
+
 }
 .teacher-avatar {
 	float:left;
@@ -25,9 +39,16 @@
 	display: inline-block;
 }
 .teacher-rank {
+	display:inline-block;
 	position:relative;
 	bottom: 5px;
+	padding-top:0.4em;
+	padding-bottom:0.4em;
+	padding-left:0.6em;
+	padding-right:0.6em;
+	margin-bottom: 10px;
 }
+
 .teacher-location {
 	display: block;
 	margin-top:-8px;
