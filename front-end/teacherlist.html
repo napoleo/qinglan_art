@@ -8,6 +8,7 @@
 
 	<script src="./bootstrap-3.3.7-dist/js/jquery-2.0.3.js"></script>
 	<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="./category.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -43,22 +44,95 @@
 		</nav>
 		<!--导航部分-->
 
-
+		<!--面包屑导航-->
 		<ol class="breadcrumb">
 			<li><a href="#">首页</a></li>
 			<li><a href="#">天津北辰区</a></li>
 			<li><a href="#">国际象棋</a></li>
 		</ol>
+		<!--面包屑导航-->
+
+		<!--课程分类-->
+		<div class="category">
+			<ul class="nav nav-pills">
+				<li><a data-toggle="collapse" data-target="#instrument" href="#" onclick="toActive(this)">器乐</a></li>
+				<li><a data-toggle="collapse" data-target="#vocal" href="#" onclick="toActive(this)">声乐</a></li>
+				<li><a data-toggle="collapse" data-target="#drawing" href="#" onclick="toActive(this)">绘画</a></li>
+				<li><a data-toggle="collapse" data-target="#calligraphy" href="#" onclick="toActive(this)">书法</a></li>
+				<li><a data-toggle="collapse" data-target="#chess" href="#" onclick="toActive(this)">棋牌</a></li>
+			</ul>
+			<ul class="collapse" id="instrument">
+				<li><a href="#">吉他</a></li>
+				<li><a href="#">电钢</a></li>
+				<li><a href="#">古筝</a></li>
+				<li><a href="#">小提琴</a></li>
+				<li><a href="#">竖笛</a></li>
+			</ul>
+			<ul class="collapse" id="vocal">
+				<li><a href="#">流行</a></li>
+				<li><a href="#">卡拉OK</a></li>
+				<li><a href="#">原生态</a></li>
+				<li><a href="#">民族</a></li>
+				<li><a href="#">美声</a></li>
+			</ul>
+			<ul class="collapse" id="drawing">
+				<li><a href="#">中国画</a></li>
+				<li><a href="#">油画</a></li>
+				<li><a href="#">素描</a></li>
+				<li><a href="#">水粉画</a></li>
+				<li><a href="#">速写</a></li>
+			</ul>
+			<ul class="collapse" id="calligraphy">
+				<li><a href="#">硬笔书法</a></li>
+				<li><a href="#">软笔书法</a></li>
+				<li><a href="#">中文书法</a></li>
+				<li><a href="#">英文书法</a></li>
+			</ul>
+			<ul class="collapse" id="chess">
+				<li><a href="#">国际象棋</a></li>
+				<li><a href="#">中国象棋</a></li>
+				<li><a href="#">围棋</a></li>
+				<li><a href="#">五子棋</a></li>
+				<li><a href="#">桥牌</a></li>
+			</ul>
+		</div>
+		<!--课程分类-->
 
 
 
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs item-navi">
 			<li><a>排序</a></li>
 			<li class="active"><a href="#">人气</a></li>
 			<li><a href="#">评价</a></li>
 			<li><a href="#">价格</a></li>
 			<li><a href="#">综合排序</a></li>
 		</ul>
+		<div class="search-item">
+			<div class="teacher-avatar">
+				<img class="img-circle" src="img/coffeetv.gif" width="80px" alt="Avatar">
+			</div>
+			<div class="teacher-name">
+				<h3>John Smith</h3>
+			</div>
+			<div class="teacher-rank label label-success">
+				实名认证
+			</div>
+			<div class="teacher-location">
+				<span class="glyphicon glyphicon-map-marker"></span>
+				天津市北辰区
+			</div>
+			<div class="teacher-course-description">
+				国际象棋开局陷阱
+			</div>
+			<div class="teacher-course-type">
+				<span class="label label-info">1对1</span>
+			</div>
+			<div class="teacher-course-price">
+				￥50/课时
+			</div>
+			<a href="#" class="teacher-comment">查看评价</a>
+
+		</div>
 		<div class="search-item">
 			<div class="teacher-avatar">
 				<img class="img-circle" src="img/coffeetv.gif" width="80px" alt="Avatar">
@@ -99,11 +173,12 @@
 				<li><a href="#">下一页</a></li>
 			</ul>
 		</nav>
+
 		<!--页脚-->
 		<div class="footer">
 			<div class="row">
 				<div class="helpcenter col-md-3">
-					<ul>
+					<ul class="list-unstyled">
 						<li>帮助中心</li>
 						<li><a href="#">平台流程</a></li>
 						<li><a href="#">老师入驻</a></li>
@@ -113,7 +188,7 @@
 					</ul>
 				</div>
 				<div class="footer-support col-md-3">
-					<ul>
+					<ul class="list-unstyled">
 						<li>服务支持</li>
 						<li><a href="#">平台保障</a></li>
 						<li><a href="#">视频拍摄</a></li>
@@ -123,7 +198,7 @@
 					</ul>
 				</div>
 				<div class="footer-aboutus col-md-3">
-					<ul>
+					<ul class="list-unstyled">
 						<li>关于青蓝</li>
 						<li><a href="#">了解我们</a></li>
 						<li><a href="#">代理合作</a></li>
@@ -133,7 +208,7 @@
 					</ul>
 				</div>
 				<div class="footer-connectus col-md-3">
-					<ul>
+					<ul class="list-unstyled">
 						<li>关注我们</li>
 						<li><a href="#">官方微信</a></li>
 						<li><a href="#">新浪微博</a></li>
@@ -146,8 +221,8 @@
 			</div>
 			<div class="footer-coopration">
 				<ul class="list-inline">
-					<li><a href="#" ><span class="glyphicon glyphicon-home">Coopration1</span></a></li>
-					<li><a href="#">Coopration2</a></li>
+					<li><a href="#">Coopration</a></li>
+					<li><a href="#">Coopration</a></li>
 					<li><a href="#">Coopration</a></li>
 					<li><a href="#">Coopration</a></li>
 					<li><a href="#">Coopration</a></li>
