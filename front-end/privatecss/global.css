@@ -1,7 +1,46 @@
-.search-item {
-	margin-top:40px;
-	margin-bottom:100px;
+.navbar-header a {
+	color:#45bee2 !important;
+}
+.breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0px;
 }
 .item-navi {
 	margin-top:20px;
+}
+
+.search-item {
+	margin-top:20px;
+	margin-bottom:100px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #eaeaea;
+}
+.teacher-avatar {
+	float:left;
+	margin-right:20px;
+	margin-top:22px;
+	height:200px;
+}
+.teacher-name {
+	display: inline-block;
+}
+.teacher-rank {
+	position:relative;
+	bottom: 5px;
+}
+.teacher-location {
+	display: block;
+	margin-top:-8px;
+	margin-bottom: 5px;
+}
+.teacher-course-description {
+	display: block;
+	line-height: 2em;
+}
+
+.teacher-course-type {
+	line-height: 1.5em;
+}
+.teacher-comment {
+	line-height: 2em;
 }
