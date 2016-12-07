@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>青蓝-教师列表</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/global.css">
+
+	<script src=".js/vendor/jquery.min.js"></script>
+	<script src="./js/plugins.js"></script>
+	<script src="./category.js"></script>
+</head>
+<body>
+		<!--导航部分-->
+		<nav class="nav navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-version">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">青蓝艺术教育</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mobile-version">
+				<ul class="nav navbar-nav">
+					<li><a>天津&nbsp;<small>北辰区</small></a></li>
+
+					<li><a href="#">切换城市</a></li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="想学什么">
+					</div>
+					<button class="btn btn-info" type="submit">搜索</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">注册</a></li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<!--导航部分-->
+
+	<div class="container">
+		<!--面包屑导航-->
+		<ol class="breadcrumb">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">天津北辰区</a></li>
+			<li><a href="#">国际象棋</a></li>
+		</ol>
+		<!--面包屑导航-->
+
+		<!--课程分类-->
+		<div class="main-category">
+			<ul class="nav nav-pills">
+				<li><a data-toggle="collapse" data-target="#instrument" href="#">器乐</a></li>
+				<li><a data-toggle="collapse" data-target="#vocal" href="#">声乐</a></li>
+				<li><a data-toggle="collapse" data-target="#drawing" href="#">绘画</a></li>
+				<li><a data-toggle="collapse" data-target="#calligraphy" href="#">书法</a></li>
+				<li><a data-toggle="collapse" data-target="#chess" href="#">棋牌</a></li>
+				<li><a href="#" onclick="closeAll()">全部收起</a></li>
+			</ul>
+			<ul class="collapse nav nav-pills sub-category" id="instrument">
+				<li><a href="#">吉他</a></li>
+				<li><a href="#">电钢</a></li>
+				<li><a href="#">古筝</a></li>
+				<li><a href="#">小提琴</a></li>
+				<li><a href="#">竖笛</a></li>
+			</ul>
+			<ul class="collapse nav nav-pills sub-category" id="vocal">
+				<li><a href="#">流行</a></li>
+				<li><a href="#">卡拉OK</a></li>
+				<li><a href="#">原生态</a></li>
+				<li><a href="#">民族</a></li>
+				<li><a href="#">美声</a></li>
+			</ul>
+			<ul class="collapse nav nav-pills sub-category" id="drawing">
+				<li><a href="#">中国画</a></li>
+				<li><a href="#">油画</a></li>
+				<li><a href="#">素描</a></li>
+				<li><a href="#">水粉画</a></li>
+				<li><a href="#">速写</a></li>
+			</ul>
+			<ul class="collapse nav nav-pills sub-category" id="calligraphy">
+				<li><a href="#">硬笔书法</a></li>
+				<li><a href="#">软笔书法</a></li>
+				<li><a href="#">中文书法</a></li>
+				<li><a href="#">英文书法</a></li>
+			</ul>
+			<ul class="collapse nav nav-pills sub-category" id="chess">
+				<li><a href="#">国际象棋</a></li>
+				<li><a href="#">中国象棋</a></li>
+				<li><a href="#">围棋</a></li>
+				<li><a href="#">五子棋</a></li>
+				<li><a href="#">桥牌</a></li>
+			</ul>
+		</div>
+		<!--课程分类-->
+
+
+
+		<ul class="nav nav-tabs item-navi">
+			<li><a>排序</a></li>
+			<li class="active"><a href="#">人气</a></li>
+			<li><a href="#">评价</a></li>
+			<li><a href="#">价格</a></li>
+			<li><a href="#">综合排序</a></li>
+		</ul>
+		<div class="search-item">
+			<div class="teacher-avatar">
+				<a href="#"><img class="img-circle" src="img/coffeetv.gif" width="80px" alt="Avatar"></a>
+			</div>
+			<div class="teacher-name">
+				<h3><a href="#">John Smith</a></h3>
+			</div>
+			&nbsp;
+			<div class="teacher-rank label label-success">
+				实名认证
+			</div>
+			<div class="teacher-location">
+				<span class="glyphicon glyphicon-map-marker"></span>
+				天津市北辰区
+			</div>
+			<div class="teacher-course-description">
+				国际象棋开局陷阱
+			</div>
+			<div class="teacher-course-type">
+				<span class="label label-info">1对1</span>
+			</div>
+			<div class="teacher-course-price">
+				￥50/课时
+			</div>
+			<a href="#" class="teacher-comment">查看评价</a>
+
+		</div>
+
+		<nav>
+			<ul class="pagination">
+				<li class="disabled"><a>上一页</a></li>
+
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a style="border:0">...</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li><a href="#">下一页</a></li>
+			</ul>
+		</nav>
+
+		<!--页脚-->
+		<div class="footer">
+			<div class="row">
+				<div class="helpcenter col-md-3">
+					<ul class="list-unstyled">
+						<li>帮助中心</li>
+						<li><a href="#">平台流程</a></li>
+						<li><a href="#">老师入驻</a></li>
+						<li><a href="#">老师帮助</a></li>
+						<li><a href="#">学生帮助</a></li>
+						<li><a href="#">机构帮助</a></li>
+					</ul>
+				</div>
+				<div class="footer-support col-md-3">
+					<ul class="list-unstyled">
+						<li>服务支持</li>
+						<li><a href="#">平台保障</a></li>
+						<li><a href="#">视频拍摄</a></li>
+						<li><a href="#">支付问题</a></li>
+						<li><a href="#">意见反馈</a></li>
+						<li><a href="#">侵权投诉</a></li>
+					</ul>
+				</div>
+				<div class="footer-aboutus col-md-3">
+					<ul class="list-unstyled">
+						<li>关于青蓝</li>
+						<li><a href="#">了解我们</a></li>
+						<li><a href="#">代理合作</a></li>
+						<li><a href="#">校园招聘</a></li>
+						<li><a href="#">社会招聘</a></li>
+						<li><a href="#">网站条款</a></li>
+					</ul>
+				</div>
+				<div class="footer-connectus col-md-3">
+					<ul class="list-unstyled">
+						<li>关注我们</li>
+						<li><a href="#">官方微信</a></li>
+						<li><a href="#">新浪微博</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-support-tel">
+				020-1111111
+			</div>
+			<div class="footer-coopration">
+				<ul class="list-inline">
+					<li><a href="#">Coopration</a></li>
+					<li><a href="#">Coopration</a></li>
+					<li><a href="#">Coopration</a></li>
+					<li><a href="#">Coopration</a></li>
+					<li><a href="#">Coopration</a></li>
+				</ul>
+			</div>
+			<div class="footer-copyright">
+				Copyright C 2016 blah blah
+			</div>
+			<div class="footer-certifications">
+				<a href="#"><img src="img/coffeetv.gif" width="50px" />
+				</a>
+			</div>
+		</div>
+		<!--页脚-->
+	</div>
+</body>
+</html>
