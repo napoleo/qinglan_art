@@ -35,6 +35,16 @@
 	margin-top:22px;
 	height:200px;
 }
+.teacher-avatar-lg {
+	float:left;
+	margin-top:20px;
+	margin-right: 25px;
+}
+/*.teacher-address {
+	display: block;
+	margin-top:-8px;
+	margin-bottom: 20px;
+}*/
 .teacher-name {
 	display: inline-block;
 }
@@ -54,6 +64,11 @@
 	margin-top:-8px;
 	margin-bottom: 5px;
 }
+.summary {
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:18px;
+}
 .teacher-course-description {
 	display: block;
 	line-height: 2em;
@@ -64,4 +79,26 @@
 }
 .teacher-comment {
 	line-height: 2em;
+}
+
+
+
+.teacher-rate {
+	display: inline-block;
+}
+.star {
+	color: orange;
+}
+.teacher-labels li{
+	display: inline-block;
+	border-radius: 2px;
+	border-color:  #eaeaea;
+	border-width: 1px;
+	border-style: solid;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
 }
