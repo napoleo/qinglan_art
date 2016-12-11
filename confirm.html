@@ -6,10 +6,14 @@
 	<title>青蓝-选课页面</title>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/global.css">
-
+	<link rel="stylesheet" type="text/css" href="./css/checked.min.css">
+	<link href="css/select.css" rel="stylesheet" />
+	<link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
 	<script src="./js/vendor/jquery.min.js"></script>
 	<script src="./js/plugins.js"></script>
 	<script src="./js/category.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/jquery.select.js"></script>
 
 </head>
 <body>
@@ -25,11 +29,11 @@
 		</div>
 		<div class="collapse navbar-collapse" id="mobile-version">
 			<ul class="nav navbar-nav">
-				<li id="currcity"><a>天津&nbsp;<small>北辰区</small></a></li>
+				<li id="currCity"><a>天津&nbsp;<small>北辰区</small></a></li>
 
 				<li><a href="#">切换城市</a></li>
 			</ul>
-			<form class="navbar-form navbar-left" role="search">
+			<form action="null.php" method="get" class="navbar-form navbar-left" role="search">
 				<div class="form-group">
 					<input class="form-control" type="text" placeholder="想学什么">
 				</div>
@@ -70,61 +74,76 @@
 		<!--老师信息导航-->
 
 
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-2">
+				<div class="teacher-avatar-lg">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center"><a href="#">留言</a></h3>
+						</div>
+						<div class="panel-body">
 
-		<div class="teacher-avatar-lg">
+							<img src="img/coffeetv.jpg" height="200px" alt="avatar"/>
+						</div>
+					</div>
+				</div>
 
-
-
-<div class="panel panel-success">
-	<div class="panel-heading">
-		<h3 class="panel-title text-center"><a  href="#">留言</a></h3>
-	</div>
-	<div class="panel-body">
-
-		<img src="img/coffeetv.jpg" height="200px" alt="avatar"/>
-	</div>
-</div>
-	</div>
-
-		<div class="teacher-info">
-			<div class="teacher-name">
-				<h1 class="text-primary">John Smith</h1>
+				<div class="map">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">常用教学地点</h3>
+						</div>
+						<div class="panel-body">
+							map here
+						</div>
+					</div>
+				</div>
 			</div>
-			&nbsp;
-			<div class="teacher-rank label label-primary">国际象棋俱乐部
-			</div>
-			<div class="teacher-address">
-				<span class="glyphicon glyphicon-map-marker"></span> 天津北辰区
-			</div>
+			<div class="col-sm-9 col-md-9 col-lg-10">
+				<div class="teacher-info">
+					<div class="teacher-name">
+						<h1 class="text-primary">John Smith</h1>
+					</div>
+					&nbsp;
+					<div class="teacher-rank label label-primary">国际象棋俱乐部
+					</div>
+					<div class="teacher-address">
+						<span class="glyphicon glyphicon-map-marker"></span> 天津北辰区
+					</div>
 
-			<div class="summary">
-				Life is a maze; love is a riddle.
-			</div>
-			<div class="teacher-rate pull-left">
-				<span class="star glyphicon glyphicon-star"></span>
-				<span class="star glyphicon glyphicon-star"></span>
-				<span class="star glyphicon glyphicon-star"></span>
-				<span class="star glyphicon glyphicon-star"></span>
-				<span class="star glyphicon glyphicon-star"></span>
-				9.5
-			</div>
-			&nbsp;
-<div class="action">
-			<ul class="pull-right list-inline list-unstyled">
-			<li>收藏</li>
-				<li>分享</li>
-				<li>举报</li>
-				<li class="visit-count"><small>10人看过</small></li>
-			</ul>
-		</div>
-			<ul class="teacher-labels">
-				<li>认真负责</li>
-				<li>教学方法优秀</li>
-				<li>经验丰富</li>
-				<li>课堂气氛好</li>
-				<li>幽默风趣</li>
-			</ul>
-		</div>
+					<div class="summary">
+						Life is a maze; love is a riddle.
+					</div>
+					<div class="teacher-rate">
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						9.5
+					</div>
+
+					<div class="action">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#">收藏</a></li>
+							<li><a href="#">分享</a></li>
+							<li><a href="#">举报</a></li>
+							<li class="visit-count"><small>10人看过</small></li>
+						</ul>
+					</div>
+
+
+
+					<!--老师标签-->
+					<ul class="teacher-labels list-unstyled list-inline">
+						<li>认真负责</li>
+						<li>教学方法优秀</li>
+						<li>经验丰富</li>
+						<li>课堂气氛好</li>
+						<li>幽默风趣</li>
+					</ul>
+				</div>
+				<!--老师标签-->
 
 
 				<!--
@@ -168,97 +187,153 @@
 						</ul>
 					</div>
 				-->
-				<div class="teacher-location">
-					<div class="teacher-location-title">
-						常用教学地点
-					</div>
-					<div class="baidumap">
-						map here
-					</div>
-				</div>
+
 				<!--end of teacher bio-->
-				<div class="course-type-nav">
-					<ul>
-						<li>1对1课程(1)</li>
-						<li>小班授课</li>
-					</ul>
-					<span class="course-trail">预约试听</span>
-				</div>
-				<form>
+				<!--<form class="form-group">
+					<table class="table table-condensed">
+						<tr>
+							<td>专业背景介绍</td>
+							<td>############</td>
+						</tr>
+						<tr>
+							<tr>
+								<td>选择课程类型</td>
+							</tr>
+							<tr>
+								<td>1对1课程(1)</td>
+							</tr>
+							<tr>
+								<td>小班授课</td>
+							</tr>
+
+							<td>选择上课方式</td>
+							<td>
+								<select class="form-control">
+									<option>老师上门</option>
+									<option>协商地点</option>
+								</select>
+							</td>
+
+						</tr>
+						<tr>
+							<td>设置课时时长</td>
+							<td>自定义时长</td>
+							<td>课程优惠</td>
+						</tr>
+
+					</table>-->
 					<div class="course-detail">
 						<div class="course-detail-title">
-							体育
+							国际象棋战术组合 ￥300/小时
 						</div>
-						<div class="course-detail-perpose">
-							<span>专业背景介绍：</span>提升身体素质
+						<div class="course-detail-intro">
+							<span class="course-detail-perpose">专业背景介绍：</span>
+							国际象棋入门教学
 						</div>
-						<div class="course-way">
-							<span>选择上课方式</span>
-							<select>
-								<option>老师上门</option>
-								<option>协商地点</option>
+						<span class="course-detail-way">选择上课方式：</span>
+						<div class="way-selections">
+							<select id="mySelect">
+								<option value="1">老师上门</option>
+								<option value="2">学生上门</option>
+								<option value="3" selected="selected">协商地点</option>
+								<option value="4">在线授课</option>
 							</select>
 						</div>
-						<div class="course-time">
-							<span>设置课时时长:</span>
-							<a class="set-time custom">自定义时长</a>
-							<a class="set-time combo">课时优惠</a>
-						</div>
-						<div class="buy-hours">
-							<span>填写购买课时</span>
-							<input type="text" name="course-hours" />
-						</div>
-					</div>
-				</form>
-				<div class="buy">
-					<span>总价：</span>
-					<button class="btn btn-warning" type="submit" name="buy">购买课时</button>
-				</div>
-				<div class="calender-table">
-					<table>
-						<thead>
-							<th>周一</th>
-							<th>周二</th>
-							<th>周三</th>
-							<th>周四</th>
-							<th>周五</th>
-							<th>周六</th>
-							<th>周日</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-							</tr>
-							<tr>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-							</tr>
-							<tr>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="comment">
-					没有评价
-				</div>
-			</div><!--end of wrapper-->
-		</body>
-		</html>
+						<script src="js/jquery-1.11.3.min.js"></script>
+						<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+						<script src="js/jquery.select.js"></script>
+						<script type="text/javascript">
+							$(function () {
+
+	   // $("#mySelect").select(); 不传参数可以这样写
+	   $("#mySelect").select({
+	   	width: "200px"
+	   });
+		//可选参数,不填就是默认值
+		//width: "180px",            //生成的select框宽度
+		//listMaxHeight:"200px",     //生成的下拉列表最大高度
+		//themeColor: "#00bb9c",    //主题颜色
+		//fontColor: "#000",        //字体颜色
+		//fontFamily: "'Helvetica Neue', arial, sans-serif",    //字体种类
+		//fontSize:"15px",           //字体大小
+		//showSearch: false,        //是否启用搜索框
+		//rowColor:"#fff",          //行原本的颜色
+		//rowHoverColor: "#0faf03", //移动选择时，每一行的hover底色
+		//fontHoverColor: "#fff",   //移动选择时，每一行的字体hover颜色
+		//mainContent: "请选择",    //选择显示框的默认文字
+		//searchContent: "关键词搜索"   //搜索框的默认提示文字
+	});
+</script>
+<div class="course-time">
+	<span>设置课时时长:</span>
+	<form action="null.php" method="get">
+		<div class="checked-boing">
+			<label>
+				<input class="checked-focus" type="radio" name="course-time">自定义时长
+			</label>
+			<label>
+				<input class="checked-focus" type="radio" name="course-time">课时优惠
+			</label>
+		</div>
+	</form>
+</div>
+<div class="buy-hours">
+	<span>填写购买课时</span>
+	<input class="form-control" type="text" name="course-hours" />
+</div>
+</div>
+</form>
+<div class="buy">
+	<span>总价：</span>
+	<button class="btn btn-warning" type="submit" name="buy">购买课时</button>
+</div>
+<div class="calender-table">
+	<table class="table table-bordered">
+		<thead>
+			<th>周一</th>
+			<th>周二</th>
+			<th>周三</th>
+			<th>周四</th>
+			<th>周五</th>
+			<th>周六</th>
+			<th>周日</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>上午</td>
+				<td>上午</td>
+				<td>上午</td>
+				<td>上午</td>
+				<td>上午</td>
+				<td>上午</td>
+				<td>上午</td>
+			</tr>
+			<tr>
+				<td>下午</td>
+				<td>下午</td>
+				<td>下午</td>
+				<td>下午</td>
+				<td>下午</td>
+				<td>下午</td>
+				<td>下午</td>
+			</tr>
+			<tr>
+				<td>晚上</td>
+				<td>晚上</td>
+				<td>晚上</td>
+				<td>晚上</td>
+				<td>晚上</td>
+				<td>晚上</td>
+				<td>晚上</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="comment">
+	没有评价
+</div>
+</div>
+</div>
+</div><!--end of wrapper-->
+</body>
+</html>
