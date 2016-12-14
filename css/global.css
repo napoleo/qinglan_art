@@ -2,11 +2,8 @@
 	color:#777;
 }
 .breadcrumb {
-	position:relative;
-	left:-4px;
 	background-color: transparent;
-	margin-bottom: 0px;
-	margin-top:10px;
+	margin-top:-10px;
 }
 .main-category li a,
 .sub-category li a {
@@ -24,6 +21,12 @@
 	margin-bottom:10px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #eaeaea;
+}
+.teacher-info-nav {
+	margin-top:-20px;
+}
+.teacher-info {
+	margin-bottom:50px;
 }
 .teacher-name a:hover {
 	text-decoration: none;
@@ -64,8 +67,8 @@
 	margin-bottom: 5px;
 }
 .summary {
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:10px;
+	margin-bottom:10px;
 	font-size:18px;
 }
 .teacher-course-description {
@@ -114,23 +117,27 @@
 	clear:both;
 	width:165px;
 }
-.course-detail-title {
+.course-purchase-title {
 	margin-top:20px;
 	margin-bottom:15px;
 	font-size:20px;
 	font-weight: bold;
 }
-.course-detail-way ,
-.course-detail-perpose {
-	margin-right: 10px;
+.course-purchase-way ,
+.course-purchase-perpose {
+	margin-right: 5px;
 }
-.course-detail-intro {
+.course-purchase-intro {
 	margin-top:10px;
 }
 .way-selections {
 	display: inline-block;
 	position: relative;
 	bottom:-10px;
+}
+.course-time {
+	margin-top:20px;
+	margin-bottom: 10px;
 }
 .calender-table {
 	margin-top:60px;
