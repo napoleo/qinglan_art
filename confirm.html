@@ -67,169 +67,165 @@
 			<!--<div style="display:inline-block;width:167px;margin-right:25px;position:relative;top:-30px;"> -->
 			<!--头像和地图-->
 			<div class="left-side">
-			<div class="teacher-avatar-lg panel panel-success">
-				<div class="panel-heading">
-					<h3 class="panel-title text-center"><a href="#">留言</a></h3>
+				<div class="teacher-avatar-lg panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center"><a href="#">留言</a></h3>
+					</div>
+					<div class="panel-body">
+						<img src="img/coffeetv.jpg" width="170px" alt="avatar"/>
+					</div>
 				</div>
-				<div class="panel-body">
-					<img src="img/coffeetv.jpg" width="170px" alt="avatar"/>
-				</div>
-			</div>
 
-			<div class="map panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title">常用教学地点</h3>
+				<div class="map panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">常用教学地点</h3>
+					</div>
+					<div class="panel-body">
+						map here
+					</div>
 				</div>
-				<div class="panel-body">
-					map here
-				</div>
-			</div>
 			</div>
 			<!--头像和地图-->
 
-			<div class="tab-content"><!-- style="display:inline-block;"-->
-				<div class="tab-pane active" id="home">
-					<!--老师信息-->
-					<div class="teacher-info">
-						<div class="teacher-name">
-							<h1 class="text-primary">John Smith</h1>
-						</div>
-						&nbsp;
-						<div class="teacher-rank label label-primary">
-							国际象棋俱乐部
-						</div>
-						<div class="teacher-address">
-							<span class="glyphicon glyphicon-map-marker"></span> 天津北辰区
-						</div>
+			<!--老师信息-->
+			<div class="right-side">
+			<div class="teacher-info">
+				<div class="teacher-name">
+					<h1 class="text-primary">John Smith</h1>
+				</div>
+				&nbsp;
+				<div class="teacher-rank label label-primary">
+					国际象棋俱乐部
+				</div>
+				<div class="teacher-address">
+					<span class="glyphicon glyphicon-map-marker"></span> 天津北辰区
+				</div>
 
-						<div class="summary">
-							life is a maze; love is a riddle.
-						</div>
-						<div class="teacher-rate">
-							<span class="star glyphicon glyphicon-star"></span>
-							<span class="star glyphicon glyphicon-star"></span>
-							<span class="star glyphicon glyphicon-star"></span>
-							<span class="star glyphicon glyphicon-star"></span>
-							<span class="star glyphicon glyphicon-star"></span>
-							9.5
-						</div>
+				<div class="summary">
+					life is a maze; love is a riddle.
+				</div>
+				<div class="teacher-rate">
+					<span class="star glyphicon glyphicon-star"></span>
+					<span class="star glyphicon glyphicon-star"></span>
+					<span class="star glyphicon glyphicon-star"></span>
+					<span class="star glyphicon glyphicon-star"></span>
+					<span class="star glyphicon glyphicon-star"></span>
+					9.5
+				</div>
 
-						<div class="action">
-							<ul class="list-inline list-unstyled">
-								<li><a href="#">收藏</a></li>
-								<li><a href="#">分享</a></li>
-								<li><a href="#">举报</a></li>
-								<li class="visit-count"><small>10人看过</small></li>
-							</ul>
-						</div>
-
+				<div class="action">
+					<ul class="list-inline list-unstyled">
+						<li><a href="#">收藏</a></li>
+						<li><a href="#">分享</a></li>
+						<li><a href="#">举报</a></li>
+						<li class="visit-count"><small>10人看过</small></li>
+					</ul>
+				</div>
 
 
-						<ul class="teacher-labels list-unstyled list-inline">
-							<li>认真负责</li>
-							<li>教学方法优秀</li>
-							<li>经验丰富</li>
-							<li>课堂气氛好</li>
-							<li>幽默风趣</li>
-						</ul>
+
+				<ul class="teacher-labels list-unstyled list-inline">
+					<li>认真负责</li>
+					<li>教学方法优秀</li>
+					<li>经验丰富</li>
+					<li>课堂气氛好</li>
+					<li>幽默风趣</li>
+				</ul>
+			</div>
+
+			<!--购买课程-->
+			<div class="course-purchase">
+				<div class="course-purchase-title">
+					国际象棋战术组合 ￥300/小时
+				</div>
+				<div class="course-purchase-intro">
+					<span class="course-purchase-perpose">专业背景介绍：</span>
+					国际象棋入门教学
+				</div>
+				<form action="null.php" method="get" name="course">
+					<div class="way-selections">
+						<span class="course-purchase-way">选择上课方式：</span>
+						<select>
+							<option value="1">老师上门</option>
+							<option value="2">学生上门</option>
+							<option value="3" selected="selected">协商地点</option>
+							<option value="4">在线授课</option>
+						</select>
 					</div>
 
-					<!--购买课程-->
-					<div class="course-purchase">
-						<div class="course-purchase-title">
-							国际象棋战术组合 ￥300/小时
+					<div class="course-time">
+						<span class="set-time">选择课时时长:</span>
+						<div class="radio-inline">
+							<label>
+								<input class="checked-focus" type="radio" name="course-time">自定义时长
+							</label>
 						</div>
-						<div class="course-purchase-intro">
-							<span class="course-purchase-perpose">专业背景介绍：</span>
-							国际象棋入门教学
+						<div class="radio-inline">
+							<label>
+								<input class="checked-focus" type="radio" name="course-time">课时优惠
+							</label>
 						</div>
-						<form action="null.php" method="get" name="course">
-							<div class="way-selections">
-								<span class="course-purchase-way">选择上课方式：</span>
-								<select>
-									<option value="1">老师上门</option>
-									<option value="2">学生上门</option>
-									<option value="3" selected="selected">协商地点</option>
-									<option value="4">在线授课</option>
-								</select>
-							</div>
-
-							<div class="course-time">
-								<span class="set-time">选择课时时长:</span>
-								<div class="radio-inline">
-									<label>
-										<input class="checked-focus" type="radio" name="course-time">自定义时长
-									</label>
-								</div>
-								<div class="radio-inline">
-									<label>
-										<input class="checked-focus" type="radio" name="course-time">课时优惠
-									</label>
-								</div>
-							</div>
-							<div class="buy-hours collapse">
-								<span>填写购买课时</span>
-								<input class="form-control" type="text" name="course-hours" />
-							</div>
-
-							<div class="buy">
-								<span>总价：</span>
-								<button class="btn btn-warning" type="submit" name="buy">购买课时</button>
-							</div>
-						</form>
 					</div>
-				</div>
-				<!--购买课程-->
-				<div class="tab-pane" id="course">
-					Sit quos veritatis quam doloremque alias sit! Ut laudantium similique possimus unde voluptates facilis vel. Est doloribus assumenda illo vero facere rerum doloremque ea optio aut. Cum amet alias ea.
-				</div>
-				<!--课程表-->
-				<div class="calender-table">
-					<table class="table table-bordered">
-						<thead>
-							<th>周一</th>
-							<th>周二</th>
-							<th>周三</th>
-							<th>周四</th>
-							<th>周五</th>
-							<th>周六</th>
-							<th>周日</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-							</tr>
-							<tr>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-							</tr>
-							<tr>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--课程表-->
-				<div class="comment">
-					没有评价
-				</div>
+					<div class="buy-hours collapse">
+						<span>填写购买课时</span>
+						<input class="form-control" type="text" name="course-hours" />
+					</div>
+
+					<div class="buy">
+						<span>总价：</span>
+						<button class="btn btn-warning" type="submit" name="buy">购买课时</button>
+					</div>
+				</form>
+			</div>
+			</div>
+			<!--购买课程-->
+			<!--课程表-->
+			<div class="calender-table">
+				<table class="table table-bordered">
+					<thead>
+						<th>周一</th>
+						<th>周二</th>
+						<th>周三</th>
+						<th>周四</th>
+						<th>周五</th>
+						<th>周六</th>
+						<th>周日</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+						</tr>
+						<tr>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+						</tr>
+						<tr>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--课程表-->
+			<div class="comment">
+				没有评价
+			</div>
 			</div><!--container-->
 	</body>
 </html>

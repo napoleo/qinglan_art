@@ -49,9 +49,12 @@
 }
 .left-side {
 	display:inline-block;
+	margin-right:20px;
 }
 .right-side {
 	display:inline-block;
+	position:relative;
+	top:-20px;
 }
 /*.teacher-address {
 	display: block;
