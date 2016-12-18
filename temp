@@ -1,0 +1,41 @@
+
+
+		   <div class="teacher-bio">
+		   <span class="teacher-id text-default">
+		   <small>id:111111111</small>
+		   </span>
+		   <div class="uteacher-rate">
+		   暂无评分
+		   </div>
+		   <ul class="teacher-data">
+		   <li>课程</li>
+		   <li>学生</li>
+		   <li>教学时长</li>
+		   <li>好评率</li>
+		   </ul>
+		   <ul class="teacher-auth list-inline list-unstyled">
+		   <li>身份认证</li>
+		   <li>3年教龄</li>
+		   <div class="teacher-exp">
+		   <div class="teacher-exp-title">
+		   过往经历
+		   </div>
+		   <ul>
+		   <li>
+		   <div class="teacher-exp-time">
+		   2015-2016
+		   </div>
+		   <div class="teacher-exp-detail">
+		   blahblahblahblah
+		   </div>
+		   </li>
+		   <li>
+		   <div class="teacher-exp-time">
+		   2015-2016
+		   </div>
+		   <div class="teacher-exp-detail">
+		   blahblahblahblah
+		   </div>
+		   </li>
+		   </ul>
+		   </div>

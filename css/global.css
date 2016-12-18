@@ -38,9 +38,20 @@
 	margin-top:22px;
 	height:200px;
 }
+
+.map {
+	text-align: center;
+	width:200px;
+}
 .teacher-avatar-lg {
-	float:left;
 	margin-top:20px;
+	width:200px;
+}
+.left-side {
+	display:inline-block;
+}
+.right-side {
+	display:inline-block;
 }
 /*.teacher-address {
 	display: block;
@@ -112,11 +123,6 @@
 	margin-top:5px;
 }
 
-.map {
-	text-align: center;
-	clear:both;
-	width:165px;
-}
 .course-purchase-title {
 	margin-top:20px;
 	margin-bottom:15px;
