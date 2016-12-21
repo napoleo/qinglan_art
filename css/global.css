@@ -1,3 +1,6 @@
+.border {
+	border:1px solid red;
+}
 #currCity a:hover {
 	color:#777;
 }
@@ -39,22 +42,14 @@
 	height:200px;
 }
 
-.map {
-	text-align: center;
-	width:200px;
-}
-.teacher-avatar-lg {
-	margin-top:20px;
-	width:200px;
-}
 .left-side {
 	display:inline-block;
 	margin-right:20px;
+	width:170px;
+	position:relative;
 }
 .right-side {
 	display:inline-block;
-	position:relative;
-	top:-20px;
 }
 /*.teacher-address {
 	display: block;
