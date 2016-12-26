@@ -46,7 +46,6 @@
 	display:inline-block;
 	margin-right:20px;
 	width:170px;
-	position:relative;
 }
 .right-side {
 	display:inline-block;
@@ -123,24 +122,33 @@
 
 .course-purchase-title {
 	margin-top:20px;
-	margin-bottom:15px;
+	margin-bottom:10px;
 	font-size:20px;
 	font-weight: bold;
 }
+/*
 .course-purchase-way ,
-.course-purchase-perpose {
+.course-purchase-purpose {
 	margin-right: 5px;
-}
+}*/
+
 .course-purchase-intro {
 	margin-top:10px;
+	margin-bottom:10px;
+}
+.course-address {
+	margin-top:10px;
+	margin-bottom:5px;
 }
 .way-selections {
 	display: inline-block;
 	position: relative;
 	bottom:-10px;
 }
-.course-time {
-	margin-top:20px;
+.course-time,
+.buy-hours
+{
+	margin-top:10px;
 	margin-bottom: 10px;
 }
 .calender-table {
