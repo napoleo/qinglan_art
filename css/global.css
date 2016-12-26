@@ -49,12 +49,15 @@ a:hover {
 
 .left-side {
 	display:inline-block;
+	vertical-align:top;
 	margin-right:30px;
+	margin-top:25px;
 	width:170px;
-	position:relative;
+	
 }
 .right-side {
 	display:inline-block;
+	vertical-align:top;
 }
 /*.teacher-address {
 	display: block;
