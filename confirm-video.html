@@ -10,16 +10,6 @@
 		<script src="./js/vendor/jquery.min.js"></script>
 		<script src="./js/plugins.js"></script>
 		<script src="./js/sumup.js"></script>
-		<style>
-.left-side {
-	display:inline-block;
-	margin-right:30px;
-	width:170px;
-	position:relative;
-	top:-300px;
-}
-
-		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -69,9 +59,9 @@
 					<li class="active"><a href="#home">主页</a></li>
 					<li><a href="#course" >课程</a></li>
 					<li><a href="#video" >视频/相册</a></li>
-					<!--		<li><a href="#article" >文章</a></li>
-		 <li><a href="#info" >个人资料</a></li>
-					-->
+			<!--		<li><a href="#article" >文章</a></li>
+					<li><a href="#info" >个人资料</a></li>
+			-->
 					<li><a href="#comment" >评价</a></li>
 				</ul>
 			</nav>
@@ -159,90 +149,90 @@
 					</div>
 					<form action="null.php" method="get" name="course">
 						<!--
-		  <div class="way-selections">
-		  <span class="course-purchase-way">选择上课方式：</span>
-		  <select>
-		  <option value="1">老师上门</option>
-		  <option value="2">学生上门</option>
-		  <option value="3" selected="selected">协商地点</option>
-		  <option value="4">在线授课</option>
-		  </select>
-		  </div>
+						<div class="way-selections">
+							<span class="course-purchase-way">选择上课方式：</span>
+							<select>
+								<option value="1">老师上门</option>
+								<option value="2">学生上门</option>
+								<option value="3" selected="selected">协商地点</option>
+								<option value="4">在线授课</option>
+							</select>
+						</div>
 						-->
-						<!--
-		  <div class="course-time">
-		  <span class="set-time">选择课时时长:</span>
-		  <div class="radio-inline">
-		  <label>
-		  <input class="checked-focus" type="radio" name="course-time">自定义时长
-		  </label>
-		  </div>
-		  <div class="radio-inline">
-		  <label>
-		  <input class="checked-focus" type="radio" name="course-time">课时优惠
-		  </label>
-		  </div>
-		  </div>
-						-->
+<!--
+						<div class="course-time">
+							<span class="set-time">选择课时时长:</span>
+							<div class="radio-inline">
+								<label>
+									<input class="checked-focus" type="radio" name="course-time">自定义时长
+								</label>
+							</div>
+							<div class="radio-inline">
+								<label>
+									<input class="checked-focus" type="radio" name="course-time">课时优惠
+								</label>
+							</div>
+						</div>
+-->
 						<div class="buy-hours">
 							<span>填写购买课时</span>
 							<input class="form-control" type="text" name="course-hours" id="course-hours" />
 						</div>
 
 						<div class="buy">
-							总价：	<span id="cost">0</span>
+						总价：	<span id="cost">0</span>
 							<button class="btn btn-warning" type="submit" name="buy">购买课时</button>
 						</div>
 					</form>
 				</div>
-				<!--购买课程-->
-				<!--课程表-->
-				<div class="calender-table">
-					<table class="table table-bordered">
-						<thead>
-							<th>周一</th>
-							<th>周二</th>
-							<th>周三</th>
-							<th>周四</th>
-							<th>周五</th>
-							<th>周六</th>
-							<th>周日</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-								<td>上午</td>
-							</tr>
-							<tr>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-								<td>下午</td>
-							</tr>
-							<tr>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-								<td>晚上</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!--课程表-->
-				<div class="comment">
-					没有评价
-				</div>
+			<!--购买课程-->
+			<!--课程表-->
+			<div class="calender-table">
+				<table class="table table-bordered">
+					<thead>
+						<th>周一</th>
+						<th>周二</th>
+						<th>周三</th>
+						<th>周四</th>
+						<th>周五</th>
+						<th>周六</th>
+						<th>周日</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+							<td>上午</td>
+						</tr>
+						<tr>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+							<td>下午</td>
+						</tr>
+						<tr>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+							<td>晚上</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--课程表-->
+			<div class="comment">
+				没有评价
+			</div>
 			</div><!--right-side-->
 		</div><!--container-->
 	</body>
