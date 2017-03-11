@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>青蓝-选课页面</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<link rel="stylesheet" type="text/css" href="./css/global.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="./js/vendor/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!--导航部分-->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-version">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">青蓝艺术教育</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mobile-version">
+				<ul class="nav navbar-nav">
+					<li id="currCity"><a><span class="fa fa-map-marker"></span>&nbsp;天津&nbsp;<small>北辰区</small></a></li>
+
+					<li><a data-toggle="modal" data-target="#switchCity" href="#">切换城市</a></li>
+
+					<!-- Modal -->
+					<div class="modal fade" id="switchCity" tabindex="-1" role="dialog" aria-labelledby="switchCity">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title">选择城市</h4>
+								</div>
+								<div class="modal-body">
+									<div class="btn-group">
+										<button class="btn btn-default dropdown-toggle" type="button" id="Province" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											省/直辖市
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="Province">
+											<li><a href="#">北京</a></li>
+											<li><a href="#">天津</a></li>
+											<li><a href="#">上海</a></li>
+											<li><a href="#">河北</a></li>
+										</ul>
+									</div>
+									<div class="btn-group">
+
+										<button class="btn btn-default dropdown-toggle" type="button" id="City" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											区/县
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="City">
+											<li><a href="#">北京</a></li>
+											<li><a href="#">天津</a></li>
+											<li><a href="#">上海</a></li>
+											<li><a href="#">河北</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</ul>
+				<form action="null.php" method="get" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="想学什么" name="search">
+					</div>
+					<button class="btn btn-info" type="submit">搜索</button>
+
+					<span data-toggle="modal" data-target="#myModal" class="time-filter fa fa-calendar"></span>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+									<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+								</div>
+								<div class="modal-body">
+									<p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+									<!--课程表-->
+									<table class="table table-bordered">
+										<thead>
+											<th>周一</th>
+											<th>周二</th>
+											<th>周三</th>
+											<th>周四</th>
+											<th>周五</th>
+											<th>周六</th>
+											<th>周日</th>
+										</thead>
+										<tbody>
+											<tr class="success">
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+											</tr>
+											<tr class="warning">
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+											</tr>
+											<tr class="info">
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+											</tr>
+										</tbody>
+									</table>
+									<!--课程表-->
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">注册</a></li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<!--导航部分-->
+		<div class="container">
+			<!--面包屑导航-->
+			<div class="nav-header">
+				<ol class="breadcrumb">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">天津北辰区</a></li>
+					<li><a href="#">国际象棋</a></li>
+				</ol>
+				<!--面包屑导航-->
+
+				<!--老师信息导航-->
+				<nav class="teacher-info-nav">
+					<ul class="nav nav-pills">
+						<li><a href="./main.html">主页</a></li>
+						<li><a href="./course.html" >课程</a></li>
+						<li><a href="./video.html" >视频/相册</a></li>
+						<li class="active"><a href="#" >评价</a></li>
+					</ul>
+				</nav>
+
+				<!--老师信息导航-->
+			</div>
+
+			<!--老师信息-->
+			<div class="comment-teacher-name">
+				<h1 class="text-primary">John Smith</h1>
+			</div>
+			&nbsp;
+			<!--评论条目-->
+			<div class="row">
+				<div class="comment-area">
+					<div class="comment-user-info">
+						<div class="comment-user">
+							<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
+						</div>
+						<h2 class="comment-user-name">Mark White</h2>
+					</div>
+					<div class="comment-content">
+						<div class="comment-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+				<div class="comment-area">
+					<div class="comment-user-info">
+						<div class="comment-user">
+							<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
+						</div>
+						<h2 class="comment-user-name">Mark White</h2>
+					</div>
+					<div class="comment-content">
+						<div class="comment-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+				<div class="comment-area">
+					<div class="comment-user-info">
+						<div class="comment-user">
+							<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
+						</div>
+						<h2 class="comment-user-name">Mark White</h2>
+					</div>
+					<div class="comment-content">
+						<div class="comment-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+				<div class="comment-area">
+					<div class="comment-user-info">
+						<div class="comment-user">
+							<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
+						</div>
+						<h2 class="comment-user-name">Mark White</h2>
+					</div>
+					<div class="comment-content">
+						<div class="comment-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+				<div class="comment-area">
+					<div class="comment-user-info">
+						<div class="comment-user">
+							<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
+						</div>
+						<h2 class="comment-user-name">Mark White</h2>
+					</div>
+					<div class="comment-content">
+						<div class="comment-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+				<div class="comment-area">
+					<div class="comment-user-info">
+						<div class="comment-user">
+							<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
+						</div>
+						<h2 class="comment-user-name">Mark White</h2>
+					</div>
+					<div class="comment-content">
+						<div class="comment-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+			</div><!--row-->
+			<footer class="site-footer">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="social-icons">
+							<ul>
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-twitter"></a></li>
+								<li><a href="#" class="fa fa-behance"></a></li>
+								<li><a href="#" class="fa fa-dribbble"></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="copyright-text">Copyright &copy; 2084 Company Name 
+					</div> </div>
+			</footer>
+
+
+		</div><!--container-->
+	</body>
+</html>
