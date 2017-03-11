@@ -35,6 +35,8 @@ $(window).load(function () {
 	bloggingisotope();
 	$(window).smartresize(bloggingisotope)
 })
+
+
 $(function () {
 
 	'use strict';
@@ -43,14 +45,6 @@ $(function () {
 	var $citypicker1 = $('#city-picker1');
 
 	$citypicker1.citypicker();
-
-	var $citypicker2 = $('#city-picker2');
-
-	$citypicker2.citypicker({
-		province: '江苏省',
-		city: '常州市',
-		district: '溧阳市'
-	});
 
 	var $citypicker3 = $('#city-picker3');
 
@@ -72,14 +66,6 @@ $(function () {
     var $citypicker1 = $('#city-picker1');
 
     $citypicker1.citypicker();
-
-    var $citypicker2 = $('#city-picker2');
-
-    $citypicker2.citypicker({
-        province: '江苏省',
-        city: '常州市',
-        district: '溧阳市'
-    });
 
     var $citypicker3 = $('#city-picker3');
 
