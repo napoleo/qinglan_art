@@ -1,11 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<meta charset="utf-8" />
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>青蓝-选课页面</title>
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<link rel="stylesheet" type="text/css" href="./css/global.css">
@@ -13,13 +10,13 @@
 		<link rel="stylesheet" href="css/templatemo-style.css">
 		<link rel="stylesheet" href="css/city-picker.css">
 		<script src="./js/vendor/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<script src="./js/bootstrap.js"></script>
 		<script src="js/city-picker.data.js"></script>
 		<script src="js/city-picker.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/freetime.js"></script>
 	</head>
 	<body>
+
 		<!--导航部分-->
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="navbar-header">
@@ -42,12 +39,16 @@
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
+
+
+
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								<h4 class="modal-title">选择城市</h4>
 							</div>
 
-							<form class="form-inline" name="city" action="null.php">
+							<form action="null.php" class="form-inline">
 								<div class="modal-body">
+
 									<div class="docs-methods">
 										<div id="distpicker">
 											<div class="form-group">
@@ -60,6 +61,7 @@
 											</div>
 										</div>
 									</div>
+
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -89,7 +91,7 @@
 								<div class="modal-body">
 									<p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
 									<!--课程表-->
-									<table class="free-time-search table-fixed table table-bordered">
+									<table class="table table-bordered">
 										<thead>
 											<th>周一</th>
 											<th>周二</th>
@@ -101,31 +103,31 @@
 										</thead>
 										<tbody>
 											<tr class="success">
-												<td>上午<span ></span></td>
-												<td>上午<span ></span></td>
-												<td>上午<span ></span></td>
-												<td>上午<span ></span></td>
-												<td>上午<span ></span></td>
-												<td>上午<span ></span></td>
-												<td>上午<span ></span></td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
+												<td>上午</td>
 											</tr>
 											<tr class="warning">
-												<td>下午<span ></span></td>
-												<td>下午<span ></span></td>
-												<td>下午<span ></span></td>
-												<td>下午<span ></span></td>
-												<td>下午<span ></span></td>
-												<td>下午<span ></span></td>
-												<td>下午<span ></span></td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
+												<td>下午</td>
 											</tr>
 											<tr class="info">
-												<td>晚上<span ></span></td>
-												<td>晚上<span ></span></td>
-												<td>晚上<span ></span></td>
-												<td>晚上<span ></span></td>
-												<td>晚上<span ></span></td>
-												<td>晚上<span ></span></td>
-												<td>晚上<span ></span></td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
+												<td>晚上</td>
 											</tr>
 										</tbody>
 									</table>
@@ -163,121 +165,141 @@
 				<!--老师信息导航-->
 				<nav class="teacher-info-nav">
 					<ul class="nav nav-pills">
-						<li><a href="./main.html">主页</a></li>
+						<li class="active"><a href="#home">主页</a></li>
 						<li><a href="./course.html" >课程</a></li>
 						<li><a href="./video.html" >视频/相册</a></li>
-						<li class="active"><a href="#" >评价</a></li>
+						<!--		<li><a href="#article" >文章</a></li>
+		  <li><a href="#info" >个人资料</a></li>
+						-->
+						<li><a href="./comment.html" >评价</a></li>
 					</ul>
 				</nav>
-
 				<!--老师信息导航-->
 			</div>
+			<!--头像和地图-->
+			<div class="left-side  hidden-xs">
+
+				<div class="post-masonry" >
+					<div class="post-thumb">
+						<img src="images/2.jpg" alt="">
+					</div>
+				</div> <!-- /.post-masonry -->
+				<div class="map hidden-xs text-center panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">常用教学地点</h3>
+					</div>
+					<div class="panel-body">
+						map here
+					</div>
+				</div>
+			</div>
+			<!--头像和地图-->
 
 			<!--老师信息-->
-			<div class="comment-teacher-name">
-				<h1 class="text-primary">John Smith</h1>
+			<div class="right-side ">
+				<div class="teacher-info">
+					<div class="teacher-name">
+						<h1 class="text-primary">John Smith</h1>
+					</div>
+					&nbsp;
+					<div class="teacher-rank label label-primary">
+						国际象棋俱乐部
+					</div>
+					<div class="teacher-address">
+						<span class="glyphicon glyphicon-map-marker"></span> 天津北辰区
+					</div>
+
+					<div class="summary">
+						life is a maze; love is a riddle.
+					</div>
+					<div class="teacher-rate">
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						<span class="star glyphicon glyphicon-star"></span>
+						9.5
+					</div>
+
+					<div class="action">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#">收藏</a></li>
+							<li><a href="#">分享</a></li>
+							<li><a href="#">举报</a></li>
+							<li class="visit-count"><small>10人看过</small></li>
+						</ul>
+					</div>
+
+
+
+					<ul class="teacher-labels list-unstyled list-inline">
+						<li>认真负责</li>
+						<li>教学方法优秀</li>
+						<li>经验丰富</li>
+						<li>课堂气氛好</li>
+						<li>幽默风趣</li>
+					</ul>
+				</div>
+
+				<!--课程表-->
+				<div class="calender-table">
+					<table class="table table-fixed table-bordered">
+						<thead>
+							<th>周一</th>
+							<th>周二</th>
+							<th>周三</th>
+							<th>周四</th>
+							<th>周五</th>
+							<th>周六</th>
+							<th>周日</th>
+						</thead>
+						<tbody>
+							<tr class="success">
+								<td id="mon-1">上午</td>
+								<td id="tue-1">上午<span class="fa fa-check-circle green"></span></td>
+								<td id="wed-1">上午</td>
+								<td id="thu-1">上午</td>
+								<td id="fri-1">上午</td>
+								<td id="sat-1">上午</td>
+								<td id="sun-1">上午</td>
+							</tr>
+							<tr class="warning">
+								<td id="mon-2">下午<span></span></td>
+								<td id="tue-2">下午</td>
+								<td id="wed-2">下午</td>
+								<td id="thu-2">下午</td>
+								<td id="fri-2">下午</td>
+								<td id="sat-2">下午</td>
+								<td id="sun-2">下午</td>
+							</tr>
+							<tr class="info">
+								<td id="mon-3">晚上</td>
+								<td id="tue-3">晚上</td>
+								<td id="wed-3">晚上</td>
+								<td id="thu-3">晚上</td>
+								<td id="fri-3">晚上</td>
+								<td id="sat-3">晚上</td>
+								<td id="sun-3">晚上</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--课程表-->
+			</div><!--right-side-->
+
+			<div class="recommend-courses">
+				<h3 class="text-primary" style="padding-bottom:10px;">过往经历</h3>
+				<div class="post-masonry">
+					<div class="post-thumb">
+						<a href="#"><img src="img/chess1.jpg" alt=""></a>
+					</div>
+				</div> <!-- /.post-masonry -->
+				<div class="post-masonry">
+					<div class="post-thumb">
+						<a href="#"><img src="img/chess2.jpg" alt=""></a>
+					</div>
+				</div> <!-- /.post-masonry -->
 			</div>
-			&nbsp;
-			<!--评论条目-->
-			<div class="row">
-				<div class="comment-area">
-					<div class="comment-user-info">
-						<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
-						<div class="comment-user">
-							<h2 class="comment-user-name">马克 怀特</h2>
-							<h4><small>所学课程:<small></h4>
-						</div>
-					</div>
-
-
-					<div class="comment-content">
-						<div class="comment-info">
-
-							會立的想有界快異？位路亞頭營的金何師的因時天過家府！
-
-							應可我生力身分用前了產品見小太始行背質的故智來話業的向說意做主後？能員的毛，請活校做益式。朋視哥，往現快，好站人找事特部常外行少、居器元動下子頭賽便性史一；花具子一。預把活者！
-
-							洋香我本苦一人國中孩病書一被海相什養因樂遠！
-							會立的想有界快異？位路亞頭營的金何師的因時天過家府！
-
-							應可我生力身分用前了產品見小太始行背質的故智來話業的向說意做主後？能員的毛，請活校做益式。朋視哥，往現快，好站人找事特部常外行少、居器元動下子頭賽便性史一；花具子一。預把活者！
-
-							洋香我本苦一人國中孩病書一被海相什養因樂遠！
-						</div>
-					</div>
-				</div>
-				<div class="comment-area">
-					<div class="comment-user-info">
-						<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
-						<div class="comment-user">
-							<h2 class="comment-user-name">马克 怀特</h2>
-							<h4><small>所学课程:<small></h4>
-						</div>
-					</div>
-
-
-					<div class="comment-content">
-						<div class="comment-info">
-							信化天不來量半義職通心層，大起之服了識公點上模防樂起卻。日的不賽作多市急保的年頭統正文……母一樂；選神洲活代片人一型實；
-						</div>
-					</div>
-				</div>
-				<div class="comment-area">
-					<div class="comment-user-info">
-						<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
-						<div class="comment-user">
-							<h2 class="comment-user-name">马克 怀特</h2>
-							<h4><small>所学课程:<small></h4>
-						</div>
-					</div>
-
-
-					<div class="comment-content">
-						<div class="comment-info">
-							會立的想有界快異？位路亞頭營的金何師的因時天過家府！
-
-							應可我生力身分用前了產品見小太始行背質的故智來話業的向說意做主後？能員的毛，請活校做益式。朋視哥，往現快，好站人找事特部常外行少、居器元動下子頭賽便性史一；花具子一。預把活者！
-
-							洋香我本苦一人國中孩病書一被海相什養因樂遠！
-						</div>
-					</div>
-				</div>
-				<div class="comment-area">
-					<div class="comment-user-info">
-						<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
-						<div class="comment-user">
-							<h2 class="comment-user-name">马克 怀特</h2>
-							<h4><small>所学课程:<small></h4>
-						</div>
-					</div>
-
-
-					<div class="comment-content">
-						<div class="comment-info">
-							信化天不來量半義職通心層，大起之服了識公點上模防樂起卻。日的不賽作多市急保的年頭統正文……母一樂；選神洲活代片人一型實；
-						</div>
-					</div>
-				</div>
-				<div class="comment-area">
-					<div class="comment-user-info">
-						<img class="comment-user-avatar" src="./img/coffeetv.gif" alt="user-avatar" width="60px">
-						<div class="comment-user">
-							<h2 class="comment-user-name">马克 怀特</h2>
-							<h4><small>所学课程:<small></h4>
-						</div>
-					</div>
-
-
-					<div class="comment-content">
-						<div class="comment-info">
-							字那麼正出度幾但個許嚴提不花去直子，曾身價備病境子們又著等幾。一了口除價去防山己護，舞他雄顧應國發充兩理開。
-
-							出況度建山接我究、教氣小把學散的平：去配關首離安所，發子嗎門似東度用能苦頭，於傳不看總，們就直。記死春行落代羅說了是苦文的選明是向除的的心雖制因慢經一飯？
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--row-->
 			<footer class="site-footer">
 				<div class="row">
 					<div class="col-md-12 text-center">
@@ -295,10 +317,9 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<p class="copyright-text">Copyright &copy; 2084 Company Name 
-					</div> </div>
+					</div>
+				</div>
 			</footer>
-
-
 		</div><!--container-->
 	</body>
 </html>
