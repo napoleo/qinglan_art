@@ -19,6 +19,8 @@
 		<script src="js/main.js"></script>
 		<script src="js/coursesListCount.js"></script>
 		<script src="js/freetime.js"></script>
+		<script src="js/sumup.js"></script>
+
 
 	</head>
 
@@ -248,18 +250,52 @@
 						<li>幽默风趣</li>
 					</ul>
 				</div><!--teacher-info-->
+
+
+
 				<div class="course-list">
 					<div class="course-list-title">课程列表<span id="course-count" class="badge pull-right"></span></div>
-					<div class="courses">PHP</div>
-					<div class="courses-intro">veritatis iusto distinctio quod aspernatur! Ab unde quis.<a class="more-info btn-sm btn-info" href="#">详细信息</a></div>
-					<div class="courses">VC</div>
-					<div class="courses-intro">alias veritatis iusto distinctio quod aspernatur! Ab unde quis.<a class="more-info btn-sm btn-info" href="#">详细信息</a></div>
-					<div class="courses">C#</div>
-					<div class="courses-intro">quod aspernatur! Ab unde quis.<a class="more-info btn-sm btn-info" href="#">详细信息</a></div>
 					<div class="courses">C++</div>
-					<div class="courses-intro">alias veritatis iusto distinctio quod aspernatur! Ab unde quis.<a class="more-info btn-sm btn-info" href="#">详细信息</a></div>
+					<div class="courses-intro">alias veritatis iusto distinctio quod aspernatur! Ab unde quis.<a class="more-info btn-sm btn-info" data-toggle="modal" data-target="#buyCourse">详细信息</a></div>
 
 				</div>
+				<!-- Button trigger modal -->
+
+				<!-- Modal -->
+				<div class="modal fade" id="buyCourse" tabindex="-1" role="dialog" aria-labelledby="buyCourse">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">购买课程：PHP从入门到放弃 200/小时</h4>
+							</div>
+							<form action="null.php" method="get" name="course">
+								<div class="modal-body">
+
+									<!--购买课程-->
+									<div class="course-purchase">
+										<div class="buy-hours">
+											<span>填写购买课时</span>
+											<input class="form-control" name="course-hours" id="course-hours"> 
+										</div>
+
+									</div>
+									<!--购买课程-->
+								</div>
+								<div class="modal-footer">
+									<div id="cost" class="buy">
+										0
+									</div>
+									<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+									<button type="button" class="btn btn-success">确认购买</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+
 			</div><!--right-side-->
 			<div class="recommend-courses">
 				<h3 class="text-primary" style="padding-bottom:10px;">推荐课程</h3>

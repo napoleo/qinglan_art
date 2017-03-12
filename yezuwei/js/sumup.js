@@ -1,5 +1,5 @@
 $(function() {
-	var price=$(".course-purchase-title").data("price");
+	var price=200;
 	$("#course-hours")[0].onchange=function() {
 		$("#cost")[0].innerHTML=$("#course-hours")[0].value*price+'￥';
 	}
